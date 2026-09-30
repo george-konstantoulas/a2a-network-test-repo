@@ -1,0 +1,9 @@
+#general artifacts
+.vscode
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.python-version
+*.adk
+*.DS_store

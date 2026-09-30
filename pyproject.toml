@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "truth-agent"
+version = "1.0.0"
+readme = "README.md"
+description = "A2A Network for Statement Truthfulness prediction and explanation."
+dependencies = [
+    "google-genai",
+    "setuptools",
+    "scikit-learn",
+    "google-cloud-storage",
+    "vertexai",
+    "google-adk[a2a]",
+    "fastmcp",
+    "pydantic-settings",
+    "pandas",
+    "uvicorn",
+    "gcsfs",
+    "opentelemetry-exporter-otlp-proto-http==1.42.1",
+    "opentelemetry-exporter-gcp-logging",
+    "opentelemetry-instrumentation-httpx",
+    "opentelemetry-instrumentation-asgi"
+]
+
+[tool.setuptools]
+packages = [
+    "truth_agent",
+    "truth_agent.sub_agents",
+    "truth_agent.a2a_apps",
+    "mcp_package",
+    "mcp_package.tools",
+    "mcp_package.schemas",
+    "truth_predictor"
+]
