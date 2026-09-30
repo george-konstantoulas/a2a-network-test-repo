@@ -154,7 +154,7 @@ claude
 
 **Prompt 1 - Add Retry/Backoff Policy:**
 ```
-Add a retry decorator with exponential backoff to handle transient failures when monitoring the fine-tuning job in config-a/a2a-truthfulness-agent/truth_predictor/utils.py. Use the pattern:
+Add a retry decorator with exponential backoff to handle transient failures when monitoring the fine-tuning job in utils.py. Use the pattern:
 - Decorator named @retry_with_backoff
 - Max 5 retries
 - Exponential backoff: 2^retry_count seconds
